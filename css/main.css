@@ -1,3 +1,9 @@
+/* :root {
+  --padding-left: 15px;
+  --padding-right: 15px;
+} */
+
+
 /* start global rules */
 * {
   margin: 0;
@@ -8,6 +14,7 @@
   width: 100%;
   border: 1px solid red;
   font-family: 'Poppins', sans-serif;
+  line-height: 22px;
 }
 
 /* end global rules */
@@ -19,11 +26,13 @@ header {
   background-color: #0083c1;
 }
 
+/* start top header */
 #header-top {
   width: 100%;
   height: 46.91px;
   border: 1px solid black;
 }
+
 
 #header-top .container {
   width: 78%;
@@ -55,10 +64,217 @@ header {
   font-weight: bold;
 }
 
+.container .login a:hover {
+  text-decoration: underline;
+}
+
 #header-top #contact {
   display: flex;
   align-items: center;
   border: 1px solid rgb(187, 22, 124);
 }
+
+.mid-top-header {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(247, 0, 0);
+}
+
+.mid-top-header .contact i {
+  font-size: 11px;
+}
+
+.mid-top-header .contact span {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.mid-top-header .contact a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mid-top-header .contact a:hover {
+  text-decoration: underline;
+}
+
+.mid-top-header .account {
+  position: relative;
+  cursor: pointer;
+  width: 16%;
+}
+
+.mid-top-header .account ul {
+  position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 12px;
+  left: -19px;
+  top: calc(100% + 5px);
+  display: none;
+}
+
+.mid-top-header .account:hover ul {
+  display: block;
+}
+
+.mid-top-header li:hover {
+  color: blue;
+}
+
+.mid-top-header .account ul li {
+  display: block;
+  margin: 0 20px;
+  padding: 3px 0;
+}
+
+
+.right-top-header {
+  border: 1px solid rgb(33, 219, 8);
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right-top-header .lang-sel {
+  position: relative;
+  cursor: pointer;
+}
+
+.right-top-header .lang-sel span {
+  display: inline-block;
+  padding: 5px 20px 5px 7px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.right-top-header .lang-sel:hover span {
+  background-color: #00567e;
+  border: 1px solid #00567e;
+}
+
+.right-top-header .lang-sel span::after {
+  content: "";
+  position: absolute;
+  border: 4px solid;
+  border-color: white transparent transparent transparent;
+  right: 7px;
+  top: 14px;
+  transition: 0.4s;
+}
+
+.right-top-header .lang-sel:hover ::after {
+  top: 18px;
+}
+
+.right-top-header .lang-sel ul {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  list-style-type: none;
+  padding: 12px;
+  display: none;
+}
+
+.right-top-header .lang-sel:hover ul {
+  display: grid;
+  align-content: space-around;
+}
+
+.right-top-header .lang-sel ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-top-header .lang-sel ul li a:hover {
+  color: blue;
+}
+
+.right-top-header .lang-sel ul li:not(:last-child) a {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+.right-top-header .lang-sel ul li img {
+  width: 25px;
+}
+
+.right-top-header .currency-sel {
+  position: relative;
+  cursor: pointer;
+}
+
+.right-top-header .currency-sel span {
+  display: inline-block;
+  padding: 5px 20px 5px 7px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.right-top-header .currency-sel:hover span {
+  background-color: #00567e;
+  border: 1px solid #00567e;
+}
+
+.right-top-header .currency-sel span::after {
+  content: "";
+  position: absolute;
+  border: 4px solid;
+  border-color: white transparent transparent transparent;
+  right: 7px;
+  top: 14px;
+  transition: 0.4s;
+}
+
+.right-top-header .currency-sel:hover ::after {
+  top: 18px;
+}
+
+.right-top-header .currency-sel ul {
+  position: absolute;
+  width: 55px;
+  height: 120px;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  list-style-type: none;
+  padding: 12px;
+  display: none;
+}
+
+.right-top-header .currency-sel:hover ul {
+  display: grid;
+  align-content: space-around;
+}
+
+.right-top-header .currency-sel ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-top-header .currency-sel ul li a:hover {
+  color: blue;
+}
+
+.right-top-header .currency-sel ul li:not(:last-child) a {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 7px;
+}
+
+/* end top header */
 
 /* end header */
